@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <div>
+    <h4>Set time:</h4>
+    <input type="number" [value]="num" (change)="changeNum($event.target.value)">
+  </div>
+  <app-time [time]="num"></app-time>
+</div>
+
+
